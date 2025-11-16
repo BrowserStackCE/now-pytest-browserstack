@@ -2,7 +2,7 @@ import pytest
 from selenium.webdriver.common.by import By
 import os
 
-def openTestPage(selenium):
+def test_example(selenium):
 
     # 1. Navigate to the website
     web_endpoint = os.environ.get("CX_TEST_URL", "https://bstackdemo.com/")
@@ -23,3 +23,4 @@ def openTestPage(selenium):
 
     # 4. Perform simple, locator-free assertions
     assert len(page_source) > 100  # Checks that the page has content
+
