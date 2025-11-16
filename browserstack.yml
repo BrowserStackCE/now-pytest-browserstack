@@ -3,6 +3,7 @@ accessKey: $BROWSERSTACK_ACCESS_KEY
 framework: pytest
 browserstackLocal: ${BROWSERSTACK_LOCAL}
 buildName: ${BROWSERSTACK_BUILD_NAME}
+buildIdentifier: ${BROWSERSTACK_BUILD_NAME}
 source: ${BROWSERSTACK_BUILD_NAME}
 projectName: ${BROWSERSTACK_PROJECT_NAME}
 percy: true
