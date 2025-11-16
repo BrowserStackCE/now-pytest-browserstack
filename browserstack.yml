@@ -20,23 +20,3 @@ accessibilityOptions:
         experimental: false # Default: true
         advanced: false
 parallelsPerPlatform: ${BSTACK_PARALLELS}
-platforms:
-  - osVersion: Windows
-    browserName: Chrome
-    browserVersion: latest-1
-
-  - osVersion: Windows
-    browserName: Firefox
-    browserVersion: latest-2
-
-  - osVersion: Windows
-    browserName: Edge
-    browserVersion: latest
-
-  - osVersion: Windows
-    browserName: Chrome
-    browserVersion: latest-1
-
-  - osVersion: Windows
-    browserName: Chrome
-    browserVersion: latest-2
