@@ -2,5 +2,6 @@
 __pycache__
 .pytest_cache
 env
-local.log
-venv
+**/**/*.log
+.venv
+log
