@@ -2,12 +2,10 @@ jsonmerge
 selenium==4.9.1
 psutil
 
-# pytest + plugins compatible with 3.13
 pytest==9.0.1
-pytest-variables>=3.1.0
-pytest-selenium>=4.0.0
-pytest-html>=4.1.1
-pytest-metadata>=3.1.1
+pytest-variables==3.1.0
+pytest-selenium==4.0.1
+pytest-html==4.1.1
+pytest-metadata==3.1.1
 
-# BrowserStack
 browserstack-sdk==1.31.0
