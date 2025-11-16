@@ -5,3 +5,4 @@ env
 **/**/*.log
 .venv
 log
+**/**/.DS_Store
