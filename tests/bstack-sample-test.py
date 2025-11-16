@@ -1,4 +1,5 @@
 import pytest
+from selenium.webdriver.common.by import By
 import os
 
 def openTestPage(selenium):
