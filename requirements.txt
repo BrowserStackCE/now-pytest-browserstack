@@ -1,4 +1,4 @@
-grpcio==0.0.0
+grpcio==1.53.2
 jsonmerge
 selenium==4.10.0
 psutil
