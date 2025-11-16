@@ -1,7 +1,7 @@
 userName: $BROWSERSTACK_USERNAME
 accessKey: $BROWSERSTACK_ACCESS_KEY
 framework: pytest
-browserstackLocal: ${BROWSERSTACK_LOCAL}
+browserstackLocal: true
 buildName: ${BROWSERSTACK_BUILD_NAME}
 source: ${BROWSERSTACK_BUILD_NAME}
 projectName: ${BROWSERSTACK_PROJECT_NAME}
