@@ -1,6 +1,5 @@
-import pytest
-from selenium.webdriver.common.by import By
 import os
+
 
 def test_example(selenium):
 
