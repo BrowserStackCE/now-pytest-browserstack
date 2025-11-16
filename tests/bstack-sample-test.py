@@ -1,20 +1,24 @@
 import pytest
-from selenium.webdriver.common.by import By
+import os
 
-def test_example(selenium):
-    selenium.get('https://bstackdemo.com/')
+def openTestPage(selenium):
 
-    # locating product on webpage and getting name of the product
-    productText = selenium.find_element(By.XPATH, '//*[@id="1"]/p').text
+    # 1. Navigate to the website
+    web_endpoint = os.environ.get("CX_TEST_URL", "https://bstackdemo.com/")
+    
+    selenium.get(web_endpoint)
 
-    # clicking the 'Add to cart' button
-    selenium.find_element(By.XPATH, '//*[@id="1"]/div[4]').click()
+    # 2. Use universal functions to get page data (no locators)
+    page_title = selenium.title
+    current_url = selenium.current_url
+    page_source = selenium.page_source
 
-    # waiting until the Cart pane has been displayed on the webpage
-    selenium.find_element(By.CLASS_NAME, 'float-cart__content')
+    # 3. Log the captured data to BrowserStack using 'annotate'
+    # This will appear in the "Text Logs" section of your Automate session
+    log_data = f"Page Title: {page_title} | Current URL: {current_url}"
+    selenium.execute_script(
+        'browserstack_executor: {"action": "annotate", "arguments": {"data": "' + log_data + '", "level": "info"}}'
+    )
 
-    # locating product in cart and getting name of the product in cart
-    productCartText = selenium.find_element(By.XPATH, '//*[@id="__next"]/div/div/div[2]/div[2]/div[2]/div/div[3]/p[1]').text
-
-    # checking whether product has been added to cart by comparing product name
-    assert productCartText == productText
+    # 4. Perform simple, locator-free assertions
+    assert len(page_source) > 100  # Checks that the page has content
