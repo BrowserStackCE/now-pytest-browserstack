@@ -1,6 +1,5 @@
 import os
 
-
 def test_example(selenium):
 
     # 1. Navigate to the website

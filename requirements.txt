@@ -1,9 +1,6 @@
 jsonmerge
-selenium==4.10.0
-psutil
+pytest_selenium==4.1.0
 pytest==9.0.1
-pytest-variables==3.1.0
-pytest-html==4.1.1
-pytest-metadata==3.1.1
-browserstack-sdk
-pytest-xdist
+
+# BrowserStack SDK
+browserstack-sdk==1.31.0
