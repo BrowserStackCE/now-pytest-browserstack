@@ -1,13 +1,9 @@
-grpcio==0.0.0
 jsonmerge
 selenium==4.10.0
 psutil
-
 pytest==9.0.1
 pytest-variables==3.1.0
-pytest-selenium==4.0.1
 pytest-html==4.1.1
 pytest-metadata==3.1.1
-
-browserstack-sdk==1.31.0
+browserstack-sdk
 pytest-xdist
