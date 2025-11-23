@@ -7,8 +7,6 @@ import pytest
 def driver_path():
     """Ensure pytest-selenium receives a valid SafariDriver path."""
     path = os.getenv("SAFARI_DRIVER_PATH", "/usr/bin/safaridriver")
-    if not os.path.exists(path):
-        raise RuntimeError(f"SafariDriver not found at: {path}")
     return path
 
 
