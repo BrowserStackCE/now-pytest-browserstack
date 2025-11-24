@@ -1,5 +1,3 @@
-grpcio < 1.52
-grpcio-status < 1.52
 jsonmerge
 pytest_selenium==4.1.0
 pytest==9.0.1
