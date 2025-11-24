@@ -1,6 +1,9 @@
+grpcio==1.64.1
+grpcio-status==1.64.1
 jsonmerge
 pytest_selenium==4.1.0
 pytest==9.0.1
 
 # BrowserStack SDK
-browserstack-sdk==1.31.0
+browserstack-sdk==1.31.7
+
