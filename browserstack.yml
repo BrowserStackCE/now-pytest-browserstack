@@ -1,7 +1,7 @@
 userName: $BROWSERSTACK_USERNAME
 accessKey: $BROWSERSTACK_ACCESS_KEY
 framework: pytest
-browserstackLocal: ${BROWSERSTACK_LOCAL}
+browserstackLocal: ${BROWSERSTACK_LOCAL_CUSTOM}
 browserStackLocalOptions:
   localIdentifier: 'browserstack-now-local'
   force: true
