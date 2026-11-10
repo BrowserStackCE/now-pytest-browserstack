@@ -2,7 +2,7 @@
 
 PyTest Integration with BrowserStack using SDK.
 
-![BrowserStack Logo](https://d98b8t1nnulk5.cloudfront.net/production/images/layout/logo-header.png?1469004780)
+![BrowserStack Logo](https://www.browserstack.com/images/static/header-logo.jpg)
 ## Prerequisite
 * Python3
 
